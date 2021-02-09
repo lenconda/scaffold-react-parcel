@@ -3,6 +3,7 @@ export default {
   collectCoverageFrom: ['src/**/*.tsx'],
   coveragePathIgnorePatterns: ['src/App.tsx', 'src/index.tsx'],
   runner: 'jest-runner',
+  testEnvironment: 'jest-environment-jsdom',
   setupFilesAfterEnv: ['./jest.setup.ts'],
   transform: { '\\.tsx?$': 'ts-jest' },
   coverageDirectory: 'coverage',
