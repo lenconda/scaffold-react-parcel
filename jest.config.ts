@@ -2,12 +2,8 @@ export default {
   collectCoverage: true,
   collectCoverageFrom: ['src/**/*.tsx'],
   coveragePathIgnorePatterns: ['src/App.tsx', 'src/index.tsx'],
-  testEnvironment: 'enzyme',
-  testEnvironmentOptions: {
-    enzymeAdapter: 'react16',
-  },
   runner: 'jest-runner',
-  setupFilesAfterEnv: ['jest-enzyme'],
+  setupFilesAfterEnv: ['./jest.setup.ts'],
   transform: { '\\.tsx?$': 'ts-jest' },
   coverageDirectory: 'coverage',
   moduleNameMapper: {

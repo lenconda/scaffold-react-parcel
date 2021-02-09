@@ -8,5 +8,6 @@ module.exports = {
       'error',
       { extensions: ['.js', '.jsx', '.ts', '.tsx'] },
     ],
+    'no-undef': [0],
   },
 };
